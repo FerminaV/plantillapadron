@@ -1,12 +1,11 @@
 main{
     background-image: url(assets/fondo.jfif);
-    background-size: 100%;
-    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 @font-face {
-    font-family: primaria
-    url(assets/fontes/static/Outfit-Regular.ttf);
+    font-family: primaria;
+    url (assets/fontes/static/Outfit-Regular.ttf);
 }
 #logos{
     display: flex;
@@ -17,15 +16,17 @@ main{
    padding: 4rem auto;
 
 }
-#Tlf{
-    display: none;
-
-}
 #puntolimpo{
    padding: 2rem auto;
-   width:460px;
+   width:360px;
     height:161px;
-    background-image: url(assets/logopuntolimpo.jfif);
+    background-image: url(assets/logopuntolimpo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+ background-size: cover;
+ font-family: primaria;  
+ font-size: 3rem;
+ color:rgb(12, 7, 106) ;
 }
 .navegacion{
     display: flex;
@@ -85,14 +86,164 @@ main{
     font-weight: 300;
 }
 #AccesoPuntoLimpo{
-    background-image: url(assets/logopuntolimpo.jfif);
-
+    /* background-image: url(assets/logopuntolimpo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
+background-color: transparent;
+font-size: 4rem;
 
 }
+.AccesoPuntoLimpo{
+    color: rgb(3, 75, 3);
+    cursor: pointer;
+}
+
 .parrafo{
     font-family: primaria;
     font-size: 2rem;
     
 }
+.map{
+    /* width: 400px;
+    height: 400px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+padding: 3rem;
+    
+}
+.PaxinaPuntoLimpo{
+    background-color: rgb(206, 243, 152);
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+
+.tituloPaxinaPuntoLimpo{
+    font-family: primaria;
+    font-weight: 400px;
+    color: darkolivegreen;
+
+}
+.titulo1{
+    font-family: primaria;
+    color:rgb(3, 75, 3);
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.localizacion{
+    border: 1rem;
+    
+}
+
+@media screen and (max-width: 1336px){
+
+    main{
+        background-image: url(assets/fondo.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #logos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+       align-content: center;
+       padding: 4rem auto;
+    
+    }
+    #puntolimpo{
+       padding: 2rem auto;
+       width:360px;
+        height:161px;
+        background-image: url(assets/logopuntolimpo2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+     background-size: cover;
+     font-family: primaria;  
+     font-size: 3rem;
+     color:rgb(12, 7, 106) ;
+    }
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        align-content: center;
+        text-decoration: underline;
+    }
+    .NavegacionInicio{
+        font-family: primaria;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        padding: 1rem 2rem;
+    }
+    #contidoCentral{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        
+    }
+    .titulo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: primaria;
+        font-size: 2rem;
+        padding: 0.5rem;
+        color: rgb(3, 75, 3);
+    
+    }
+    .tituloInicio{
+        font-family: primaria;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.8rem;
+        color: rgb(75, 64, 3);
+    
+    }
+    #enlaces{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .BotonRapido{
+        width:260px;
+        height: 100px;
+        color:  rgb(3, 75, 3);
+        font-family: primaria;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+    #AccesoPuntoLimpo{
+        /* background-image: url(assets/logopuntolimpo2.jpg);
+        background-repeat: no-repeat;
+        background-position: center; */
+    background-color: transparent;
+    font-size: 2rem;
+       
+    }
+    .AccesoPuntoLimpo{
+        color: rgb(3, 75, 3);
+        cursor: pointer;
+    }
+    
+    .parrafo{
+        font-family: primaria;
+        font-size: 2rem;
+        
+    }
+
+}
+     
+
 
 
