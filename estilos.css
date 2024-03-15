@@ -1,9 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: 0;
-
 }
 main {
   background-image: url(assets/fondoretoque.png);
@@ -12,7 +11,7 @@ main {
 }
 @font-face {
   font-family: primaria;
- src: url(assets/fontes/static/Outfit-Regular.ttf);
+  src: url(assets/fontes/static/Outfit-Regular.ttf);
 }
 #logos {
   display: flex;
@@ -61,9 +60,10 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   font-family: primaria;
-  font-size: 3rem;
+  font-size: 5rem;
   padding: 3rem;
   color: rgb(3, 75, 3);
+  font-weight: bolder;
 }
 .tituloInicio {
   font-family: primaria;
@@ -91,7 +91,7 @@ main {
   box-shadow: 2px 5px;
 }
 #AccesoPuntoLimpo {
-   background-color: transparent;
+  background-color: transparent;
   font-size: 4rem;
 }
 .AccesoPuntoLimpo {
@@ -120,7 +120,6 @@ main {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .tituloPaxinaPuntoLimpo {
   font-family: primaria;
   font-weight: 400px;
@@ -133,11 +132,10 @@ main {
   color: rgb(3, 75, 3);
   font-size: 2rem;
   text-decoration: underline;
- }
-#ParrafoPuntoLimpo{
+}
+#ParrafoPuntoLimpo {
   padding: 5rem;
 }
-
 .localizacion {
   margin: 5rem;
   padding: 2rem;
@@ -152,8 +150,7 @@ main {
   background-color: rgb(231, 241, 214);
   justify-content: center;
 }
-
-.Informacion{
+.Informacion {
   margin: 5rem;
   padding: 2rem;
   display: flex;
@@ -167,9 +164,9 @@ main {
   background-color: rgb(231, 241, 214);
   justify-content: center;
 }
-.horario{
-   margin: 5rem;
-  padding: 2rem; 
+.horario {
+  margin: 5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -183,9 +180,9 @@ main {
   justify-content: center;
   justify-items: center;
 }
-#usuarios{
+#usuarios {
   margin: 5rem;
-  padding: 2rem; 
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -201,9 +198,16 @@ main {
 }
 
 /* configuracion media quarys */
+
 @media screen and (max-width: 1336px) {
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: 0;
+  }
   main {
-    background-image: url(assets/fondo.jfif);
+    background-image: url(assets/fondoretoque.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -212,26 +216,44 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
-    align-content: center;
-    padding: 4rem auto;
+    gap: 1rem;
+    align-content: left;
+    padding: 1rem auto;
+    width: 18rem;
+    height: 30rem;
+  }
+  #padron {
+    width: 20rem;
+    height: 11rem;
+    display: flex;
+    justify-content: rights;
+  }
+  #padronsostible {
+    width: 20rem;
+    height: 11rem;
+    display: flex;
+    justify-content: right;
   }
   #puntolimpo {
+    display: flex;
+    flex-wrap: wrap;
     padding: 2rem auto;
     width: 360px;
-    height: 161px;
-    background-image: url(assets/logopuntolimpo2.jpg);
+    height: 160px;
+    background-image: url(assets/puntolimporetoque3.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100vh;
     font-family: primaria;
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(12, 7, 106);
+    display: flex;
+    justify-content: center;
   }
   .navegacion {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 1rem;
     align-content: center;
     text-decoration: underline;
   }
@@ -241,7 +263,10 @@ main {
     display: flex;
     flex-direction: row;
     align-content: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
+  }
+  #ListaInicio {
+    color: rgb(3, 75, 3);
   }
   #contidoCentral {
     display: flex;
@@ -263,7 +288,7 @@ main {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: rgb(75, 64, 3);
   }
   #enlaces {
@@ -283,9 +308,6 @@ main {
     font-weight: 300;
   }
   #AccesoPuntoLimpo {
-    /* background-image: url(assets/logopuntolimpo2.jpg);
-        background-repeat: no-repeat;
-        background-position: center; */
     background-color: transparent;
     font-size: 2rem;
   }
@@ -293,9 +315,93 @@ main {
     color: rgb(3, 75, 3);
     cursor: pointer;
   }
-
   .parrafo {
     font-family: primaria;
     font-size: 2rem;
+  }
+  .AccesoRecollidaVoluminosos {
+    font-size: 2rem;
+    color: rgb(3, 75, 3);
+    cursor: pointer;
+  }
+  /* css paxina do punto limpo} */
+  
+  .parrafo {
+    font-family: primaria;
+    font-size: 1.5rem;
+  }
+  .map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    position: relative;
+  }
+  .PaxinaPuntoLimpo {
+    background-color: rgb(206, 243, 152);
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  .tituloPaxinaPuntoLimpo {
+    font-family: primaria;
+    font-weight: 400px;
+    color: darkolivegreen;
+  }
+  .titulo1 {
+    display: flex;
+    justify-content: right;
+    font-family: primaria;
+    color: rgb(3, 75, 3);
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+  #ParrafoPuntoLimpo {
+    padding: 1rem;
+  }
+  .localizacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border-style: double;
+    border-color: rgb(3, 75, 3);
+    border-radius: 20px;
+    background-color: rgb(231, 241, 214);
+    justify-content: left;
+  }
+  .Informacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border-style: double;
+    border-color: rgb(3, 75, 3);
+    border-radius: 20px;
+    background-color: rgb(231, 241, 214);
+    justify-content: left;
+  }
+  .horario {
+    /* margin: 1rem;
+  padding: 1rem;  */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border-style: double;
+    border-color: rgb(3, 75, 3);
+    border-radius: 20px;
+    background-color: rgb(231, 241, 214);
+    justify-content: left;
+    justify-items: left;
+  }
+  #usuarios {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border-style: double;
+    border-color: rgb(3, 75, 3);
+    border-radius: 20px;
+    background-color: rgb(231, 241, 214);
+    justify-content: left;
+    justify-items: left;
   }
 }
