@@ -105,10 +105,7 @@ main {
 }
 
 /* css paxina do punto limpo} */
-.parrafo {
-  font-family: primaria;
-  font-size: 2rem;
-}
+
 .map {
   display: flex;
   flex-wrap: wrap;
@@ -121,20 +118,32 @@ main {
   flex-wrap: wrap;
 }
 .tituloPaxinaPuntoLimpo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-family: primaria;
   font-weight: 400px;
   color: darkolivegreen;
 }
 .titulo1 {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: right;
   font-family: primaria;
   color: rgb(3, 75, 3);
   font-size: 2rem;
   text-decoration: underline;
 }
 #ParrafoPuntoLimpo {
-  padding: 5rem;
+  padding: 1rem;
+}
+.parrafo_PuntoLimpo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: primaria;
+  font-size: 2rem;
 }
 .localizacion {
   margin: 5rem;
@@ -142,8 +151,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  width: 50rem;
-  height: 40rem;
   border-style: double;
   border-color: rgb(3, 75, 3);
   border-radius: 20px;
@@ -156,8 +163,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  width: 50rem;
-  height: 40rem;
   border-style: double;
   border-color: rgb(3, 75, 3);
   border-radius: 20px;
@@ -170,15 +175,11 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  width: 50rem;
-  height: 40rem;
   border-style: double;
   border-color: rgb(3, 75, 3);
   border-radius: 20px;
   background-color: rgb(231, 241, 214);
-  justify-content: center;
-  justify-items: center;
+  justify-items: right;
 }
 #usuarios {
   margin: 5rem;
@@ -187,8 +188,6 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 0.5rem;
-  width: 50rem;
-  height: 40rem;
   border-style: double;
   border-color: rgb(3, 75, 3);
   border-radius: 20px;
@@ -254,6 +253,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    margin-top: 1rem;
     align-content: center;
     text-decoration: underline;
   }
@@ -276,7 +276,7 @@ main {
   }
   .titulo {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     flex-wrap: wrap;
     font-family: primaria;
     font-size: 2rem;
@@ -315,50 +315,46 @@ main {
     color: rgb(3, 75, 3);
     cursor: pointer;
   }
-  .parrafo {
-    font-family: primaria;
-    font-size: 2rem;
-  }
   .AccesoRecollidaVoluminosos {
     font-size: 2rem;
     color: rgb(3, 75, 3);
     cursor: pointer;
   }
   /* css paxina do punto limpo} */
-  
-  .parrafo {
-    font-family: primaria;
-    font-size: 1.5rem;
-  }
   .map {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     position: relative;
+    width: 14rem;
+    height: 11rem;
   }
   .PaxinaPuntoLimpo {
     background-color: rgb(206, 243, 152);
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .tituloPaxinaPuntoLimpo {
+    display: flex;
     font-family: primaria;
-    font-weight: 400px;
+    font-size: 1.5rem;
     color: darkolivegreen;
   }
   .titulo1 {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     font-family: primaria;
     color: rgb(3, 75, 3);
     font-size: 2rem;
     text-decoration: underline;
   }
   #ParrafoPuntoLimpo {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .localizacion {
+    margin: 1rem;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -369,6 +365,8 @@ main {
     justify-content: left;
   }
   .Informacion {
+    margin: 1rem;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -379,8 +377,8 @@ main {
     justify-content: left;
   }
   .horario {
-    /* margin: 1rem;
-  padding: 1rem;  */
+    margin: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -393,6 +391,8 @@ main {
     justify-items: left;
   }
   #usuarios {
+    margin: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -403,5 +403,11 @@ main {
     background-color: rgb(231, 241, 214);
     justify-content: left;
     justify-items: left;
+  }
+  .parrafo_PuntoLimpo1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: primaria;
+    font-size: 2rem;
   }
 }
