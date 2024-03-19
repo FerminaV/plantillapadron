@@ -128,8 +128,9 @@ main {
 .titulo1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: right;
+  gap: auto;
+  padding: auto;
+  justify-content: center;
   font-family: primaria;
   color: rgb(3, 75, 3);
   font-size: 2rem;
@@ -150,7 +151,7 @@ main {
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
   border-style: double;
   border-color: rgb(3, 75, 3);
   border-radius: 20px;
@@ -195,7 +196,40 @@ main {
   justify-content: center;
   justify-items: center;
 }
+.parrafo_PuntoLimpo1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: primaria;
+  font-size: 2rem;
+}
+.EncabezadoTaboa{
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: rgb(166, 245, 166);
+ 
+}
+.filasTabla{
+   font-family: primaria;
+  font-size: 1.5rem;
+  text-align: center;
 
+}
+.filasTabla1{
+  background-color: rgb(193, 195, 189);
+  font-family: primaria;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.table{
+  border: 2px;
+  box-shadow: black 1rem 1rem 1rem;
+  padding-top: 2rem;
+}
+.filasTabla2{
+  text-align: left;
+}
 /* configuracion media quarys */
 
 @media screen and (max-width: 1336px) {
@@ -320,7 +354,7 @@ main {
     color: rgb(3, 75, 3);
     cursor: pointer;
   }
-  /* css paxina do punto limpo} */
+  /* css paxina do punto limpo} media quarys */
   .map {
     display: flex;
     flex-wrap: wrap;
@@ -409,5 +443,25 @@ main {
     flex-wrap: wrap;
     font-family: primaria;
     font-size: 2rem;
+  }
+  .EncabezadoTaboa{
+    gap: .5rem;
+    padding: .5rem;
+    font-family: primaria;
+    font-size: 1rem;
+    background-color: rgb(166, 245, 166);
+   
+  }
+  .filasTabla{
+     font-family: primaria;
+    font-size: 1rem;
+    text-align: right;
+  
+  }
+  .filasTabla1{
+    background-color: rgb(193, 195, 189);
+    font-family: primaria;
+    font-size: 1rem;
+    text-align: right;
   }
 }
