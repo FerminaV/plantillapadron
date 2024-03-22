@@ -40,7 +40,7 @@ main {
   padding: 1.5rem;
   align-content: center;
   text-decoration: underline;
-}
+  }
 .NavegacionInicio {
   font-family: primaria;
   font-size: 2rem;
@@ -48,7 +48,7 @@ main {
   flex-direction: row;
   align-content: center;
   padding: 2rem 4rem;
-}
+  }
 #contidoCentral {
   display: flex;
   flex-direction: column;
@@ -93,15 +93,19 @@ main {
 #AccesoPuntoLimpo {
   background-color: transparent;
   font-size: 4rem;
-}
+ }
 .AccesoPuntoLimpo {
   color: rgb(3, 75, 3);
   cursor: pointer;
+
 }
 .AccesoRecollidaVoluminosos {
   font-size: 3rem;
   color: rgb(3, 75, 3);
   cursor: pointer;
+}
+footer{
+  padding: 1rem;
 }
 
 /* css paxina do punto limpo} */
@@ -110,6 +114,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  width: 70rem;
 }
 .PaxinaPuntoLimpo {
   background-color: rgb(206, 243, 152);
@@ -145,6 +150,7 @@ main {
   gap: 1rem;
   font-family: primaria;
   font-size: 2rem;
+ 
 }
 .localizacion {
   margin: 5rem;
@@ -180,8 +186,8 @@ main {
   border-color: rgb(3, 75, 3);
   border-radius: 20px;
   background-color: rgb(231, 241, 214);
-  justify-items: right;
-}
+  justify-items: center;
+ }
 #usuarios {
   margin: 5rem;
   padding: 2rem;
@@ -202,27 +208,26 @@ main {
   gap: 1rem;
   font-family: primaria;
   font-size: 2rem;
+  justify-content: center;
 }
 .EncabezadoTaboa{
   gap: 1rem;
   padding: 1rem;
   font-size: 1.4rem;
   background-color: rgb(166, 245, 166);
- 
-}
+ }
 .filasTabla{
    font-family: primaria;
   font-size: 1.5rem;
   text-align: center;
-
 }
 .filasTabla1{
-  background-color: rgb(193, 195, 189);
   font-family: primaria;
   font-size: 1.5rem;
   text-align: center;
 }
 .table{
+  padding: 1.5rem;
   border: 2px;
   box-shadow: black 1rem 1rem 1rem;
   padding-top: 2rem;
@@ -230,7 +235,22 @@ main {
 .filasTabla2{
   text-align: left;
 }
-/* configuracion media quarys */
+.filasTabla:hover{
+  background-color: rgb(137, 137, 189);
+}
+.filasTabla1:hover{
+  background-color: rgb(137,137,189);
+}
+.parrafo_PuntoLimpo2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: primaria;
+  font-size: 2rem;
+}
+
+
+/* configuracion media queries */
 
 @media screen and (max-width: 1336px) {
   * {
@@ -354,7 +374,10 @@ main {
     color: rgb(3, 75, 3);
     cursor: pointer;
   }
-  /* css paxina do punto limpo} media quarys */
+  footer{
+    padding: 1rem;
+  }
+  /* css paxina do punto limpo} media queries */
   .map {
     display: flex;
     flex-wrap: wrap;
@@ -459,9 +482,14 @@ main {
   
   }
   .filasTabla1{
-    background-color: rgb(193, 195, 189);
     font-family: primaria;
     font-size: 1rem;
     text-align: right;
+  }
+  .filasTabla:hover{
+    background-color: rgb(137, 137, 189);
+  }
+  .filasTabla1:hover{
+    background-color: rgb(137,137,189);
   }
 }
